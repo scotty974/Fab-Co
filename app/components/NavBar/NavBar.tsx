@@ -7,7 +7,7 @@ function NavBar() {
           <h1 className="text-3xl font-bold">Etheve Fabien</h1>
           <ul className="flex flex-col gap-2">
             <li>
-              <a href="#" className="hover:underline">A propos</a>
+              <a href="#about" className="hover:underline">A propos</a>
             </li>
             <li>
               <a href="#" className="hover:underline">Projets</a>
