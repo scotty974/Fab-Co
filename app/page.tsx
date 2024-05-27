@@ -30,9 +30,9 @@ function ScrollCamera() {
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen gap-10">
+      <NavBar />
       <section className="w-full h-screen flex justify-center ">
-        <NavBar />
         <Canvas
           shadows
           gl={{ antialias: false }}
@@ -51,7 +51,48 @@ export default function Home() {
           <ScrollCamera />
         </Canvas>
       </section>
-      <section className="w-full h-screen" id="about"></section>
+      <section className="w-11/12 h-1/2 mx-auto flex justify-center" id="about">
+        <div className="w-3/4 flex justify-around items-start h-full  gap-4">
+          <div className="flex gap-2 flex-col">
+            <h2 className="text-4xl font-bold">A Propos.</h2>
+            <p>Parlons un peu de moi</p>
+          </div>
+          <div className="w-1/2 flex flex-col items-start gap-4">
+            <p>
+              Fabien - Petit j'aimais jouer aux jeux vidéos, surtout à
+              Minecraft. Cette envie de faire son univers, de créer, d'imaginer
+              je le dois bien à ce jeu. Il me fallait donc un métier ou je
+              pouvais mettre en oeuvre cette créativité, graphiste ? Designer ?
+              UX/UI ? Ils ne répondaient pas à mes exigences, je voulais voir un
+              projet fonctionnel, un projet que je peux utiliser après le
+              développement.
+            </p>
+            <p>
+              C'est ainsi que j'ai fait mon choix dans l'univers de la
+              programmation. Un monde avec des possibilités à perdre la tête.
+            </p>
+            <p>
+              Je suis donc développeur web Junior en freelance et je suis à
+              votre disposition pour réaliser vos projets.
+            </p>
+            <a
+              href="mailto:fabienethevepro@gmail.com"
+              className="bg-neutral-800 p-2 text-white"
+            >
+              Contactez-moi
+            </a>
+          </div>
+          r
+        </div>
+      </section>
+      <section
+        className="w-11/12 h-screen mx-auto flex justify-center"
+        id="projects"
+      >
+        <div className="flex gap-2 flex-col">
+          <h2 className="text-4xl font-bold">Projets.</h2>
+        </div>
+      </section>
     </main>
   );
 }

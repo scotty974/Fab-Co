@@ -10,7 +10,7 @@ function NavBar() {
               <a href="#about" className="hover:underline">A propos</a>
             </li>
             <li>
-              <a href="#" className="hover:underline">Projets</a>
+              <a href="#projects" className="hover:underline">Projets</a>
             </li>
             <li>
               <a href="#" className="hover:underline">Contacts</a>
