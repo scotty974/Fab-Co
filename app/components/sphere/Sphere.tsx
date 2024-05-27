@@ -4,8 +4,12 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { Outlines } from "@react-three/drei";
 const rfs = THREE.MathUtils.randFloatSpread;
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 32)
-const baubleMaterial = new THREE.MeshStandardMaterial({ color: "white", roughness: 0, envMapIntensity: 1 })
+const sphereGeometry = new THREE.SphereGeometry(1, 32, 32);
+const baubleMaterial = new THREE.MeshStandardMaterial({
+  color: "white",
+  roughness: 0,
+  envMapIntensity: 1,
+});
 const Sphere = ({
   mat = new THREE.Matrix4(),
   vec = new THREE.Vector3(),
@@ -36,10 +40,15 @@ const Sphere = ({
     }
   });
   return (
-    <instancedMesh ref={ref} castShadow receiveShadow args={[sphereGeometry, baubleMaterial, 40]}>
+    <instancedMesh
+      ref={ref}
+      castShadow
+      receiveShadow
+      args={[sphereGeometry, baubleMaterial, 40]}
+    >
       <Outlines thickness={0} />
     </instancedMesh>
-  )
+  );
 };
 
 export default Sphere;
