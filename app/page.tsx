@@ -1,6 +1,6 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
+import { OrbitControls, Environment, Text} from "@react-three/drei";
 import Sphere from "./components/sphere/Sphere";
 import { Physics } from "@react-three/cannon";
 import Pointer from "./components/pointer/Pointer";
@@ -16,6 +16,7 @@ export default function Home() {
             <Pointer />
             <Sphere />
           </Physics>
+          <Text fontSize={1.5} color={"black"}>Fabien ETHEVE</Text>
         </Canvas>
       </section>
     </main>
