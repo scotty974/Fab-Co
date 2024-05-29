@@ -55,12 +55,12 @@ export default function Home() {
         className="w-11/12 h-1/2 mx-auto flex justify-center my-10"
         id="about"
       >
-        <div className="w-3/4 flex justify-around items-start h-full  gap-4">
+        <div className="w-3/4 flex flex-col md:flex-row justify-around items-start h-full  gap-4">
           <div className="flex gap-2 flex-col">
             <h2 className="text-4xl font-bold">A Propos.</h2>
             <p>Parlons un peu de moi</p>
           </div>
-          <div className="w-1/2 flex flex-col items-start gap-4">
+          <div className="md:w-1/2 w-full flex flex-col items-start gap-4">
             <p>
               Fabien - Petit j'aimais jouer aux jeux vidéos, surtout à
               Minecraft. Cette envie de faire son univers, de créer, d'imaginer
