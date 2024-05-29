@@ -1,6 +1,6 @@
 "use client";
 import { Canvas, useThree } from "@react-three/fiber";
-import { Environment, Text, Html, ScrollControls } from "@react-three/drei";
+import { Environment, Text } from "@react-three/drei";
 import Sphere from "./components/sphere/Sphere";
 import { Physics } from "@react-three/cannon";
 import Pointer from "./components/pointer/Pointer";
@@ -51,7 +51,10 @@ export default function Home() {
           <ScrollCamera />
         </Canvas>
       </section>
-      <section className="w-11/12 h-1/2 mx-auto flex justify-center" id="about">
+      <section
+        className="w-11/12 h-1/2 mx-auto flex justify-center my-10"
+        id="about"
+      >
         <div className="w-3/4 flex justify-around items-start h-full  gap-4">
           <div className="flex gap-2 flex-col">
             <h2 className="text-4xl font-bold">A Propos.</h2>
@@ -85,10 +88,10 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="w-11/12 h-screen mx-auto flex justify-center"
+        className="w-11/12 h-screen mx-auto flex justify-center "
         id="projects"
       >
-        <div className="flex gap-2 flex-col w-3/4">
+        <div className="flex gap-2 flex-col w-3/4 ">
           <h2 className="text-4xl font-bold">Projets.</h2>
           <div className="w-full  flex flex-col mt-4 justify-between gap-10">
             <div className="flex items-center w-full">
