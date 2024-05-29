@@ -1,6 +1,6 @@
 "use client";
 import { Canvas, useThree } from "@react-three/fiber";
-import { Environment, Text } from "@react-three/drei";
+import { Environment, Text, Html, ScrollControls } from "@react-three/drei";
 import Sphere from "./components/sphere/Sphere";
 import { Physics } from "@react-three/cannon";
 import Pointer from "./components/pointer/Pointer";
@@ -82,15 +82,52 @@ export default function Home() {
               Contactez-moi
             </a>
           </div>
-          r
         </div>
       </section>
       <section
         className="w-11/12 h-screen mx-auto flex justify-center"
         id="projects"
       >
-        <div className="flex gap-2 flex-col">
+        <div className="flex gap-2 flex-col w-3/4">
           <h2 className="text-4xl font-bold">Projets.</h2>
+          <div className="w-full  flex flex-col mt-4 justify-between gap-10">
+            <div className="flex items-center w-full">
+              <div className="w-1/2 ">
+                <img
+                  src="/images/img1.jpg"
+                  alt="projet"
+                  className=" object-cover h-40 "
+                />
+              </div>
+              <div className="w-1/2 flex justify-center">
+                <span className="text-6xl font-bold text-neutral-300">1</span>
+              </div>
+            </div>
+            <div className="flex items-center flex-row-reverse w-full">
+              <div className="w-1/2 ">
+                <img
+                  src="/images/img2.jpg"
+                  alt="projet"
+                  className="w-full object-cover h-40"
+                />
+              </div>
+              <div className="w-1/2 flex justify-center">
+                <span className="text-6xl font-bold text-neutral-300">2</span>
+              </div>
+            </div>
+            <div className="flex items-center  w-full">
+              <div className="w-1/2 ">
+                <img
+                  src="/images/img3.jpg"
+                  alt="projet"
+                  className="w-full object-cover h-40"
+                />
+              </div>
+              <div className="w-1/2 flex justify-center">
+                <span className="text-6xl font-bold text-neutral-300">3</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
