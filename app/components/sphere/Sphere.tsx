@@ -15,7 +15,7 @@ const Sphere = ({
   vec = new THREE.Vector3(),
   ...props
 }) => {
-  const [ref, api] = useSphere(() => ({
+  const [ref, api]:any = useSphere(() => ({
     args: [1],
     mass: 1,
     angularDamping: 0.1,
