@@ -93,11 +93,13 @@ export default function Home() {
           <div className="w-full  flex flex-col mt-4 justify-between gap-10">
             <div className="flex items-center w-full">
               <div className="w-1/2 ">
-                <img
-                  src="/images/img1.jpg"
-                  alt="projet"
-                  className=" object-cover h-40 "
-                />
+                <a href="https://vision-bice.vercel.app/" target="_blank">
+                  <img
+                    src="/images/img1.jpg"
+                    alt="projet"
+                    className=" object-cover h-40 hover:scale-105 duration-300"
+                  />
+                </a>
               </div>
               <div className="w-1/2 flex justify-center">
                 <span className="text-6xl font-bold text-neutral-300">1</span>
@@ -105,11 +107,13 @@ export default function Home() {
             </div>
             <div className="flex items-center flex-row-reverse w-full">
               <div className="w-1/2 ">
-                <img
-                  src="/images/img2.jpg"
-                  alt="projet"
-                  className="w-full object-cover h-40"
-                />
+                <a href="https://space-quiz.popcorn-esd.com/" target="_blank">
+                  <img
+                    src="/images/img2.jpg"
+                    alt="projet"
+                    className="w-full object-cover h-40 hover:scale-105 duration-300"
+                  />
+                </a>
               </div>
               <div className="w-1/2 flex justify-center">
                 <span className="text-6xl font-bold text-neutral-300">2</span>
@@ -117,11 +121,13 @@ export default function Home() {
             </div>
             <div className="flex items-center  w-full">
               <div className="w-1/2 ">
-                <img
-                  src="/images/img3.jpg"
-                  alt="projet"
-                  className="w-full object-cover h-40"
-                />
+                <a href="https://mind-brush.vercel.app/" target="_blank">
+                  <img
+                    src="/images/img3.jpg"
+                    alt="projet"
+                    className="w-full object-cover h-40 hover:scale-105 duration-300"
+                  />
+                </a>
               </div>
               <div className="w-1/2 flex justify-center">
                 <span className="text-6xl font-bold text-neutral-300">3</span>

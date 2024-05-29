@@ -13,7 +13,7 @@ function NavBar() {
               <a href="#projects" className="hover:underline">Projets</a>
             </li>
             <li>
-              <a href="#" className="hover:underline">Contacts</a>
+              <a href="mailto:fabienethevepro@gmail.com" className="hover:underline">Contacts</a>
             </li>
           </ul>
           <div className="flex flex-wrap flex-col gap-2">
