@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "title": "Vulnérabilité",
+    "description": "Une application web permettant de visualiser des données climatiques afin de déterminer les bulnérabilités des infrastructures.",
+    "competences": [
+      "Python",
+      "Hadoop",
+      "Spark",
+      "Docker",
+      "React",
+      "Qdrant",
+      "PostgreSQL"
+    ],
+    "link": "https://github.com/scotty974/VulMap"
+  },
+  {
+    "id": 2,
+    "title": "Neat",
+    "description": "Un modèle d'évolution génétique from scratch, dans différents environnements.",
+    "competences": ["Python", "Gymnasium"],
+    "link": "https://github.com/scotty974/NEAT.git"
+  },
+  {
+    "id": 3,
+    "title": "Argus - Plateforme de vidéo surveillance algorithmique",
+    "description": "Plateforme de vidéo surveillance algorithmique permettant de détecter des objets et des personnes dans des vidéos.",
+    "competences": [
+      "Python",
+      "OpenCV",
+      "TensorFlow",
+      "Docker",
+      "React",
+      "Minio",
+      "PostgreSQL"
+    ],
+    "link": "https://github.com/scotty974/Argus.git"
+  },
+  {
+    "id": 4,
+    "title": "X-Auth, authentification avec un wallet",
+    "description": "Un système d'authentification avec un wallet",
+    "competences": ["Express", "Web3", "JS"],
+    "link": "https://github.com/scotty974/X-auth.git"
+  },
+  {
+    "id": 5,
+    "title": "BCE - Pipeline Scrapping Airflow",
+    "description": "Un pipeline scrapping Airflow permettant de scraper des données sur le site de BCE.",
+    "competences": ["Airflow", "Python", "Docker"],
+    "link": "https://github.com/scotty974/BCE.git"
+  },
+  {
+    "id": 6,
+    "title": "Extension google ",
+    "description": "Une extension google permettant de faire des résumés de pages web.",
+    "competences": ["JS"],
+    "link": "https://github.com/scotty974/Briefly_back.git"
+  }
+]

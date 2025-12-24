@@ -6,6 +6,7 @@ import { Physics } from "@react-three/cannon";
 import Pointer from "./components/pointer/Pointer";
 import NavBar from "./components/NavBar/NavBar";
 import { useRef, useEffect } from "react";
+import project from "../lib/project.json";
 
 function ScrollCamera() {
   const { camera } = useThree();
@@ -74,10 +75,7 @@ export default function Home() {
               C'est ainsi que j'ai fait mon choix dans l'univers de la
               programmation. Un monde avec des possibilités à perdre la tête.
             </p>
-            <p>
-              Je suis donc développeur web Junior en freelance et je suis à
-              votre disposition pour réaliser vos projets.
-            </p>
+
             <a
               href="mailto:fabienethevepro@gmail.com"
               className="bg-neutral-800 p-2 text-white"
@@ -88,54 +86,59 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="w-11/12 h-screen mx-auto flex justify-center "
+        className="w-11/12 min-h-screen mx-auto py-20 flex flex-col items-center"
         id="projects"
       >
-        <div className="flex gap-2 flex-col w-3/4 ">
-          <h2 className="text-4xl font-bold">Projets.</h2>
-          <div className="w-full  flex flex-col mt-4 justify-between gap-10">
-            <div className="flex items-center w-full">
-              <div className="w-1/2 ">
-                <a href="https://vision-bice.vercel.app/" target="_blank">
-                  <img
-                    src="/images/img1.jpg"
-                    alt="projet"
-                    className=" object-cover h-40 hover:scale-105 duration-300"
-                  />
+        <div className="w-full max-w-5xl">
+          {/* Titre avec un style épuré */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold">Projets.</h2>
+            <div className="h-1 w-12 bg-blue-600 mt-2"></div>
+          </div>
+
+          {/* Grille de projets */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {project.map((p) => (
+              <div
+                key={p.id}
+                className="group flex flex-col gap-4 p-6 rounded-2xl border border-transparent hover:border-slate-100 hover:bg-slate-50/50 transition-all duration-300 ease-in-out hover:-translate-y-1"
+              >
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-2xl font-semibold tracking-tight group-hover:text-blue-600 transition-colors">
+                    {p.title}
+                  </h3>
+                  <p className="text-slate-500 leading-relaxed font-light">
+                    {p.description}
+                  </p>
+                </div>
+
+                {/* Badges de compétences */}
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {p.competences.map((skill, index) => (
+                    <span
+                      key={index}
+                      className="text-[10px] uppercase tracking-widest bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium"
+                    >
+                      {skill.trim()}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Lien stylisé */}
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center text-sm font-semibold text-slate-900 group-hover:gap-2 transition-all"
+                >
+                  Voir le projet
+                  <span className="opacity-0 group-hover:opacity-100 transition-all">
+                    {" "}
+                    →{" "}
+                  </span>
                 </a>
               </div>
-              <div className="w-1/2 flex justify-center">
-                <span className="text-6xl font-bold text-neutral-300">1</span>
-              </div>
-            </div>
-            <div className="flex items-center flex-row-reverse w-full">
-              <div className="w-1/2 ">
-                <a href="https://space-quiz.popcorn-esd.com/" target="_blank">
-                  <img
-                    src="/images/img2.jpg"
-                    alt="projet"
-                    className="w-full object-cover h-40 hover:scale-105 duration-300"
-                  />
-                </a>
-              </div>
-              <div className="w-1/2 flex justify-center">
-                <span className="text-6xl font-bold text-neutral-300">2</span>
-              </div>
-            </div>
-            <div className="flex items-center  w-full">
-              <div className="w-1/2 ">
-                <a href="https://mind-brush.vercel.app/" target="_blank">
-                  <img
-                    src="/images/img3.jpg"
-                    alt="projet"
-                    className="w-full object-cover h-40 hover:scale-105 duration-300"
-                  />
-                </a>
-              </div>
-              <div className="w-1/2 flex justify-center">
-                <span className="text-6xl font-bold text-neutral-300">3</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
